@@ -27,7 +27,7 @@ final class BlockManager extends PluginComponent {
   use PluginComponentsTrait;
 
   /**
-  * Initializes the clock component.
+  * Initializes the block component.
   * @param PluginToolkit $plugin The Plugin.
   */
   public static function init(PluginToolkit $plugin): array {

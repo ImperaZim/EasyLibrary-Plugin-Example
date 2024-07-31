@@ -8,6 +8,7 @@ use imperazim\ui\UiManager;
 use imperazim\hud\HudManager;
 use imperazim\item\ItemManager;
 use imperazim\block\BlockManager;
+use imperazim\entity\EntityManager;
 use imperazim\item\enchantment\EnchantmentManager;
 
 use imperazim\components\plugin\PluginToolkit;
@@ -45,6 +46,7 @@ final class PluginExample extends PluginToolkit {
     $this->addComponent($this, HudManager::class);
     $this->addComponent($this, ItemManager::class);
     $this->addComponent($this, BlockManager::class);
+    $this->addComponent($this, EntityManager::class);
     $this->addComponent($this, EnchantmentManager::class);
   }
 }
