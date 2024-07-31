@@ -35,9 +35,9 @@ final class DialogueCommand extends BaseCommand {
   */
   protected function prepare(): void {
     $this->setPermission('default.permission');
-    $this->addConstraints(
+    $this->addConstraints([
       new InGameRequiredConstraint($this)
-    );
+    ]);
     $this->registerSubcommands([
       new SimpleDialogueSubcommand()
     ]);

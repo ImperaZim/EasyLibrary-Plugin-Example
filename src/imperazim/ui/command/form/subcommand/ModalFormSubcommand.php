@@ -35,9 +35,9 @@ final class ModalFormSubCommand extends BaseSubCommand {
   */
   protected function prepare(): void {
     $this->setPermission('default.permission');
-    $this->addConstraints(
+    $this->addConstraints([
       new InGameRequiredConstraint($this)
-    );
+    ]);
   }
 
   /**

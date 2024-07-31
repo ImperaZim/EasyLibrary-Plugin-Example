@@ -33,7 +33,7 @@ final class PluginExample extends PluginToolkit {
     /**
     * Register the textures according to the directory based on them, in the example below it passes the directory ./item/textures, therefore, all the textures in that directory will be registered on the server.
     */
-    $this->registerTextures(__DIR__ . 'item/textures/', 'textures');
+    $this->registerTextures(__DIR__ . '/item/textures/', 'textures');
 
     /**
     * Adds and initializes the component passed in functions!
