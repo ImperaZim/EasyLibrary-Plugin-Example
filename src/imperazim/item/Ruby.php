@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace imperazim\harvest\custom;
+namespace imperazim\item;
 
 use pocketmine\item\Item;
 use pocketmine\block\Block;
@@ -20,7 +20,7 @@ use internal\customies\item\CreativeInventoryInfo;
 
 /**
 * Class Ruby
-* @package com\imperazim\harvest\custom
+* @package imperazim\item
 */
 class Ruby extends Item implements ItemComponents {
   use ItemComponentsTrait;

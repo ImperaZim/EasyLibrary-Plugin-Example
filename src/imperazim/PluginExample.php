@@ -7,6 +7,7 @@ namespace imperazim;
 use imperazim\ui\UiManager;
 use imperazim\hud\HudManager;
 use imperazim\item\ItemManager;
+use imperazim\block\BlockManager;
 use imperazim\item\enchantment\EnchantmentManager;
 
 use imperazim\components\plugin\PluginToolkit;
@@ -33,7 +34,7 @@ final class PluginExample extends PluginToolkit {
     /**
     * Register the textures according to the directory based on them, in the example below it passes the directory ./item/textures, therefore, all the textures in that directory will be registered on the server.
     */
-    $this->registerTextures(__DIR__ . '/item/textures/', 'textures');
+    $this->registerTextures(__DIR__ . '/textures/', 'textures');
 
     /**
     * Adds and initializes the component passed in functions!
@@ -43,6 +44,7 @@ final class PluginExample extends PluginToolkit {
     $this->addComponent($this, UiManager::class);
     $this->addComponent($this, HudManager::class);
     $this->addComponent($this, ItemManager::class);
+    $this->addComponent($this, BlockManager::class);
     $this->addComponent($this, EnchantmentManager::class);
   }
 }
