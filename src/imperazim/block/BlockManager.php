@@ -46,7 +46,7 @@ final class BlockManager extends PluginComponent {
     foreach ($blocks as $block) {
       $factory = CustomiesBlockFactory::getInstance();
       $factory->registerBlock(
-        block: new $block(),
+        className: $block,
         identifier: $block::IDENTIFIER,
         model: new Model(
           [
