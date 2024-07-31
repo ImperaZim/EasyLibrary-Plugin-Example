@@ -37,7 +37,7 @@ final class BlockManager extends PluginComponent {
     self::setPlugin(plugin: $plugin);
 
     /**
-    * To register a custom block, you must pass the custom block, an identifier (identifier and the id referring to the block, for example "diamond_ore"), an model, and Creative Category, an serializer and deserializer.
+    * To register a custom block, you must pass the custom block class, an identifier (identifier and the id referring to the block, for example "diamond_ore"), an model, and Creative Category, an serializer and deserializer.
     *
     */
     $blocks = [
